@@ -7,7 +7,7 @@ alert("Olá mundo")
 
 // -- Código:
 
-let numero = window.prompt("Digite um número:")
+let numero = prompt("Digite um número:")
 alert("O número informado foi " + numero)
 // 3. Faça um programa que peça dois números e imprima a soma.
 
