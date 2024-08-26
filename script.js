@@ -145,14 +145,14 @@ alert(`Você pagará ${multa} reais por quilo excedente.`)
 
 let quantianaHora = prompt('Quanto você ganha por hora?')
 let horasnoMes = prompt('Quantas horas você trabalha no mês?')
-const Salario = parseFloat(quantianaHora * horasnoMes)
-const pagarInss = parseFloat((Salario * 8) / 100)
-const pagarSidicato = parseFloat((Salario * 5) / 100)
+const salarioBruto = parseFloat(quantianaHora * horasnoMes)
+const pagarInss = parseFloat((salarioBruto * 8) / 100)
+const pagarSidicato = parseFloat((salarioBruto * 5) / 100)
 const descontos = pagarInss + pagarSidicato
-const SalarioLiquido = parseFloat(Salario - descontos)
+const salarioLiquido = parseFloat(salarioBruto - descontos)
 
-alert(`Seu salário bruto é de ${Salario} reais;
+alert(`Seu salário bruto é de ${salarioBruto} reais;
 Você pagará ${pagarInss} reais ao INSS;
 E também pagará ${pagarSidicato} reais ao sindicato;
-Seu salário líquido é de ${SalarioLiquido} reais.
+Seu salário líquido é de ${salarioLiquido} reais.
 `)
